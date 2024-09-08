@@ -1,24 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import Container from "@mui/material/Container";
+import { Header } from "./components/header";
+import { Hero } from "./components/hero";
+import { Features } from "./components/features";
+import "./App.css";
+import "./assets/fonts/index.css";
+import { Footer } from "./components/footer";
+import { ConnectWallet } from "./components/connect";
+import ScrollToTop from "./components/scrollToTop";
 
 function App() {
+  document.title = "Welcome to MoonBot";
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container>
+      <main style={{ position: "relative" }}>
+        <Header />
+        <Hero />
+        <Features />
+        <ConnectWallet />
+      </main>
+      <Footer />
+      <ScrollToTop />
+    </Container>
   );
 }
 
