@@ -21,7 +21,7 @@ export const MobileNav = ({ menuOpen, toggleDrawer }) => {
         onKeyDown={() => toggleDrawer(!menuOpen)}
       >
         <Typography variant="h5" padding="1rem">
-          MoonBot
+          EthBomb
         </Typography>
         <Divider />
         <List>
