@@ -8,6 +8,7 @@ import { Footer } from "./components/footer";
 import { ConnectWallet } from "./components/connect";
 import ScrollToTop from "./components/scrollToTop";
 import { HowItWorks } from "./components/howItWorks";
+import { WhyChoose } from "./components/whyChoose";
 
 function App() {
   document.title = "EthBomb - Welcome";
@@ -18,6 +19,7 @@ function App() {
         <Hero />
         <Features />
         <HowItWorks />
+        <WhyChoose />
         <ConnectWallet />
       </main>
       <Footer />

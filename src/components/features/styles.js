@@ -27,7 +27,6 @@ export const FeaturesCard = styled("div")(({ theme }) => ({
   justifyContent: "space-between",
   [theme.breakpoints.up("sm")]: {
     padding: "2rem",
-
     maxWidth: "300px",
   },
 }));
