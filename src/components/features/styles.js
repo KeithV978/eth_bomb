@@ -17,7 +17,6 @@ export const Contents = styled(Stack)(({ theme }) => ({
   },
 }));
 export const FeaturesCard = styled("div")(({ theme }) => ({
-  // minHeight: "60vh",
   width: "100%",
   backgroundImage: `linear-gradient(120deg, ${[theme.palette.primary.main]}, ${[
     theme.palette.tertiary.main,
@@ -28,6 +27,7 @@ export const FeaturesCard = styled("div")(({ theme }) => ({
   flexDirection: "column",
   justifyContent: "space-between",
   [theme.breakpoints.up("sm")]: {
+    minHeight: "70vh",
     padding: "2rem",
     maxWidth: "300px",
   },

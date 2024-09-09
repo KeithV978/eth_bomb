@@ -1,5 +1,6 @@
 * {
   transition: all ease-in 0.3s;
+  background-repeat: no-repeat;
 }
 body {
   background-color: #01020e;

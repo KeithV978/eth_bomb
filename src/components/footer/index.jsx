@@ -8,7 +8,7 @@ import Telegram from "@mui/icons-material/Telegram";
 import X from "@mui/icons-material/X";
 import { NetworkEthereum } from "@web3icons/react";
 import Instagram from "@mui/icons-material/Instagram";
-import logo from "../../assets/images/logo/logo.jpg";
+import logo from "../../assets/images/logo/logo.png";
 
 export const Footer = () => {
   return (

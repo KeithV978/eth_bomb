@@ -30,11 +30,12 @@ export const Features = () => {
               fontWeight={700}
               marginBottom={2}
             >
-              Telegram Bot for Token Deployment
+              Community Voting & Project Support
             </Typography>
             {[
-              "Users can deploy their own tokens through our Telegram bot.",
-              "The bot offers significantly reduced gas fees, making it easier and more affordable for developers and creators to launch their tokens on the Ethereum network.",
+              "Once the Bomb reaches a certain threshold, the community will be able to vote on which newly deployed token (from our bot) deserves support.",
+              `The project with the most votes will receive a major boost, as the funds in the Bomb will be used to purchase its tokens.`,
+              "This creates a continuous cycle where promising projects are supported, and the community has a say in which projects succeed.",
             ].map((item, index) => {
               return (
                 <ListItem disableGutters sx={{ alignItems: "start" }}>
@@ -48,11 +49,42 @@ export const Features = () => {
               );
             })}
           </div>
+
           <StyledButton variant="outlined">Learn More</StyledButton>
         </FeaturesCard>
 
         {/* Second feature */}
         <SecFeaturesCard>
+          <div>
+            <Typography
+              variant="h6"
+              textAlign="center"
+              fontWeight={700}
+              marginBottom={2}
+            >
+              Benefits for Token Holders
+            </Typography>
+            {[
+              "As a holder of EthBomb, you not only participate in a cutting-edge DeFi system but also have the chance to influence the success of new and innovative projects on the Ethereum network.",
+              "Your EthBomb tokens provide governance power, allowing you to vote in important decisions and project selections.",
+            ].map((item, index) => {
+              return (
+                <ListItem disableGutters sx={{ alignItems: "start" }}>
+                  <ListItemIcon sx={{ minWidth: "30px" }}>
+                    <Check sx={{ color: "#1c1c1c" }} />
+                  </ListItemIcon>
+                  <Typography variant="body2" key={index}>
+                    {item}
+                  </Typography>
+                </ListItem>
+              );
+            })}
+          </div>
+
+          <StyledButton variant="outlined">Learn More</StyledButton>
+        </SecFeaturesCard>
+        {/* Third feature */}
+        <ThirdFeaturesCard>
           <div>
             <Typography
               variant="h6"
@@ -80,36 +112,6 @@ export const Features = () => {
             })}
           </div>
           <StyledButton variant="outlined">Learn More</StyledButton>
-        </SecFeaturesCard>
-        {/* Third feature */}
-        <ThirdFeaturesCard>
-          <div>
-            <Typography
-              variant="h6"
-              textAlign="center"
-              fontWeight={700}
-              marginBottom={2}
-            >
-              Community Voting & Project Support
-            </Typography>
-            {[
-              "Once the Bomb reaches a certain threshold, the community will be able to vote on which newly deployed token (from our bot) deserves support.",
-              `The project with the most votes will receive a major boost, as the funds in the Bomb will be used to purchase its tokens.`,
-              "This creates a continuous cycle where promising projects are supported, and the community has a say in which projects succeed.",
-            ].map((item, index) => {
-              return (
-                <ListItem disableGutters sx={{ alignItems: "start" }}>
-                  <ListItemIcon sx={{ minWidth: "30px" }}>
-                    <Check sx={{ color: "#1c1c1c" }} />
-                  </ListItemIcon>
-                  <Typography variant="body2" key={index}>
-                    {item}
-                  </Typography>
-                </ListItem>
-              );
-            })}
-          </div>
-          <StyledButton variant="outlined">Learn More</StyledButton>
         </ThirdFeaturesCard>
 
         {/* Fourth feature */}
@@ -121,11 +123,11 @@ export const Features = () => {
               fontWeight={700}
               marginBottom={2}
             >
-              Benefits for Token Holders
+              Telegram Bot for Token Deployment
             </Typography>
             {[
-              "As a holder of EthBomb, you not only participate in a cutting-edge DeFi system but also have the chance to influence the success of new and innovative projects on the Ethereum network.",
-              "Your EthBomb tokens provide governance power, allowing you to vote in important decisions and project selections.",
+              "Users can deploy their own tokens through our Telegram bot.",
+              "The bot offers significantly reduced gas fees, making it easier and more affordable for developers and creators to launch their tokens on the Ethereum network.",
             ].map((item, index) => {
               return (
                 <ListItem disableGutters sx={{ alignItems: "start" }}>
@@ -139,6 +141,7 @@ export const Features = () => {
               );
             })}
           </div>
+
           <StyledButton variant="outlined">Learn More</StyledButton>
         </FourthFeaturesCard>
       </Contents>

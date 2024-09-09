@@ -25,15 +25,19 @@ import tron_hand from "../../assets/images/hero/hero_.png";
 import Telegram from "@mui/icons-material/Telegram";
 import { BOT_LINK } from "../../utils/links";
 import { useTheme } from "@mui/material";
+import logo from "../../assets/images/logo/logo.png";
 
 export const Hero = () => {
   const theme = useTheme();
   return (
     <Wrapper id="hero">
+      <Box sx={{ width: "10%", margin: "1rem auto" }}>
+        <img src={logo} alt="logo" style={{ width: "100%" }} />
+      </Box>
       <TextWrapper>
-        <SuperText>Designed to simplify... </SuperText>
+        <SuperText>Designed to simplify</SuperText>
         <Maintext variant="h3">
-          ...the creation and deployment <br /> of new tokens on the
+          the creation and deployment <br /> of new tokens on the
           <span style={{ color: `${[theme.palette.primary.main]}` }}>
             {" "}
             Ethereum network.

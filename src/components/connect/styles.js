@@ -9,7 +9,7 @@ export const Wrapper = styled("section")(({ theme }) => ({
   backgroundImage: `url('${bgImage}')`,
   backgroundSize: "cover",
   backgroundRepeat: "no-repeat",
-  borderRadius: "25px",
+  borderRadius: "5px",
   display: "flex",
   flexDirection: "column",
   alignItems: "center",
@@ -25,15 +25,15 @@ export const Wrapper = styled("section")(({ theme }) => ({
     backgroundColor: "#0000009e",
     width: "100%",
     height: "100%",
-    borderRadius: "15px",
+    borderRadius: "5px",
     // zIndex: -1,
   },
 
   [theme.breakpoints.up("sm")]: {
     backgroundSize: "100%",
-    borderRadius: "50px",
+    borderRadius: "5px",
     "&::before": {
-      borderRadius: "25px",
+      borderRadius: "5px",
     },
   },
 }));
