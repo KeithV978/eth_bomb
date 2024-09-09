@@ -14,7 +14,7 @@ export const HowItWorks = () => {
           {/* first */}
           <Item
             sx={{
-              borderLeft: "3px solid #fff",
+              borderLeft: "4px solid #fff",
               borderLeftColor: "primary.main",
             }}
           >
@@ -29,7 +29,7 @@ export const HowItWorks = () => {
           {/* second */}
           <Item
             sx={{
-              borderLeft: "3px solid #fff",
+              borderLeft: "4px solid #fff",
               borderLeftColor: "#2196f3",
             }}
           >
@@ -44,7 +44,7 @@ export const HowItWorks = () => {
           {/* third */}
           <Item
             sx={{
-              borderLeft: "3px solid #fff",
+              borderLeft: "4px solid #fff",
               borderLeftColor: "secondary.main",
             }}
           >
@@ -59,7 +59,7 @@ export const HowItWorks = () => {
           {/* fourth */}
           <Item
             sx={{
-              borderLeft: "3px solid #fff",
+              borderLeft: "4px solid #fff",
               borderLeftColor: "tertiary.main",
             }}
           >
@@ -67,6 +67,56 @@ export const HowItWorks = () => {
             <ItemBody variant="h6">
               The Bomb funds are used to purchase the winning project’s tokens,
               driving growth and providing liquidity.
+            </ItemBody>
+          </Item>
+          <Divider sx={{ borderColor: "#313131" }} />
+        </Box>
+      </div>
+
+      <div style={{ marginTop: "3rem" }}>
+        <Typography variant="h4">Why Choose EthBomb?</Typography>
+        <Box sx={{ width: { xs: "100%", sm: "fit-content" } }}>
+          {/* first */}
+          <Item
+            sx={{
+              borderLeft: "4px solid #fff",
+              //   borderLeftColor: "primary.main",
+            }}
+          >
+            <ItemHeader variant="h5">Lower Costs:</ItemHeader>{" "}
+            <ItemBody variant="h6">
+              The Telegram bot allows for low-cost token deployment, making it
+              accessible to more developers and creators.
+            </ItemBody>
+          </Item>
+          <Divider sx={{ borderColor: "#313131" }} />
+
+          {/* second */}
+          <Item
+            sx={{
+              borderLeft: "4px solid #fff",
+              //   borderLeftColor: "#2196f3",
+            }}
+          >
+            <ItemHeader variant="h5">Community Empowerment:</ItemHeader>{" "}
+            <ItemBody variant="h6">
+              EthBomb ensures the community has a direct hand in deciding which
+              projects succeed.
+            </ItemBody>
+          </Item>
+          <Divider sx={{ borderColor: "#313131" }} />
+
+          {/* third */}
+          <Item
+            sx={{
+              borderLeft: "4px solid #fff",
+              //   borderLeftColor: "secondary.main",
+            }}
+          >
+            <ItemHeader variant="h5">Sustainable Growth:</ItemHeader>{" "}
+            <ItemBody variant="h6">
+              The continuous filling of the Bomb through token taxes creates a
+              self-sustaining system for community support and growth.
             </ItemBody>
           </Item>
           <Divider sx={{ borderColor: "#313131" }} />

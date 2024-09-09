@@ -1,9 +1,9 @@
 import { styled } from "@mui/material";
 
 export const Wrapper = styled("section")(({ theme }) => ({
-  backgroundColor: `${[theme.palette.primary.main]}`,
+  backgroundColor: `${[theme.palette.secondary.main]}`,
   color: "#ccc",
-  padding: "1rem",
+  padding: ".5rem 1rem",
   textAlign: "center",
   display: "flex",
   flexDirection: "column",
@@ -13,4 +13,8 @@ export const Wrapper = styled("section")(({ theme }) => ({
   [theme.breakpoints.up("sm")]: {
     flexDirection: "row",
   },
+  // position: "sticky",
+  // bottom: 0,
+  // width: "100%",
+  // zIndex: 100,
 }));

@@ -8,23 +8,29 @@ import { Footer } from "./components/footer";
 import { ConnectWallet } from "./components/connect";
 import ScrollToTop from "./components/scrollToTop";
 import { HowItWorks } from "./components/howItWorks";
-import { WhyChoose } from "./components/whyChoose";
+// import { WhyChoose } from "./components/whyChoose";
 
 function App() {
   document.title = "EthBomb - Welcome";
   return (
-    <Container>
-      <main style={{ position: "relative" }}>
+    // <div style={{}}>
+    <Container
+      sx={{
+        position: "relative",
+      }}
+    >
+      <main>
         <Header />
         <Hero />
         <Features />
         <HowItWorks />
-        <WhyChoose />
+        {/* <WhyChoose /> */}
         <ConnectWallet />
       </main>
       <Footer />
       <ScrollToTop />
     </Container>
+    // </div>
   );
 }
 

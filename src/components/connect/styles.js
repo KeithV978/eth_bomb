@@ -14,11 +14,27 @@ export const Wrapper = styled("section")(({ theme }) => ({
   flexDirection: "column",
   alignItems: "center",
   //   height: "50vh",
-  boxShadow: "inset 0 0 0 1000px rgba(0,0,0,.2)",
+  // boxShadow: "inset 0 0 0 1000px rgba(0,0,0,.4)",
+  position: "relative",
+  "&::before": {
+    content: '""',
+    position: "absolute",
+    top: "50%",
+    left: "50%",
+    transform: "translate(-50%, -50%)",
+    backgroundColor: "#0000009e",
+    width: "100%",
+    height: "100%",
+    borderRadius: "15px",
+    // zIndex: -1,
+  },
 
   [theme.breakpoints.up("sm")]: {
     backgroundSize: "100%",
     borderRadius: "50px",
+    "&::before": {
+      borderRadius: "25px",
+    },
   },
 }));
 export const Title = styled(Typography)(({ theme }) => ({
@@ -27,7 +43,7 @@ export const Title = styled(Typography)(({ theme }) => ({
   alignItems: "center",
 }));
 export const ConnectButtonWrapper = styled("div")(({ theme }) => ({
-  backgroundColor: "#00000070",
+  // backgroundColor: "#00000070",
   color: "#fff",
   borderRadius: "12px",
   padding: "1rem",
