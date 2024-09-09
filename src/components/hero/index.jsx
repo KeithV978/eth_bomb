@@ -31,7 +31,7 @@ export const Hero = () => {
   const theme = useTheme();
   return (
     <Wrapper id="hero">
-      <Box sx={{ width: "10%", margin: "1rem auto" }}>
+      <Box sx={{ width: "30%", margin: "1rem auto" }}>
         <img src={logo} alt="logo" style={{ width: "100%" }} />
       </Box>
       <TextWrapper>

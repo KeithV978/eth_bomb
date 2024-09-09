@@ -26,8 +26,12 @@ export const FeaturesCard = styled("div")(({ theme }) => ({
   display: "flex",
   flexDirection: "column",
   justifyContent: "space-between",
+  boxShadow: "inset 0 0 0 1000px rgba(0,0,0,.4)",
+  "&:hover": {
+    boxShadow: "inset 0 0 0 1000px rgba(0,0,0,.168)",
+  },
   [theme.breakpoints.up("sm")]: {
-    minHeight: "70vh",
+    minHeight: "500px",
     padding: "2rem",
     maxWidth: "300px",
   },

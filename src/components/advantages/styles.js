@@ -1,7 +1,7 @@
 import { styled } from "@mui/material";
 import airdrop from "../../assets/images/advantages/coin_fall.png";
 import trend from "../../assets/images/advantages/trend.png";
-import hands from "../../assets/images/advantages/hands.png";
+import hands from "../../assets/images/advantages/comm.png";
 import rewards from "../../assets/images/advantages/rewards1.png";
 
 export const Wrapper = styled("section")(({ theme }) => ({
