@@ -1,7 +1,7 @@
 import * as React from "react";
 import { Img, Ul, Wrapper } from "./styles";
 import { Button } from "../button";
-import logo from "../../assets/images/logo/logo.png";
+import logo from "../../assets/images/logo/logo.jpg";
 import Stack from "@mui/material/Stack";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
@@ -38,7 +38,7 @@ export const Header = () => {
           <Stack direction="row" alignItems="center">
             <Img src={logo} alt="logo" />
             <Typography variant="h6" fontWeight={700}>
-              MoonBot
+              EthBomb
             </Typography>
           </Stack>
           <Button

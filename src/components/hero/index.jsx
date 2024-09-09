@@ -2,7 +2,7 @@ import React from "react";
 import {
   Img,
   Maintext,
-  Network,
+  // Network,
   SuperText,
   TextWrapper,
   Wrapper,
@@ -13,28 +13,33 @@ import Box from "@mui/material/Box";
 import Link from "@mui/material/Link";
 import MuiBtn from "@mui/material/Button";
 import { Button } from "../button";
-import tron_hand from "../../assets/images/hero/tron_hand.png";
+import tron_hand from "../../assets/images/hero/hero_.png";
 // import Container from "@mui/material/Container";
-import {
-  // NetworkTron,
-  TokenSUN,
-  TokenUSDC,
-  TokenUSDD,
-  TokenUSDT,
-} from "@web3icons/react";
+// import {
+//   // NetworkTron,
+//   TokenSUN,
+//   TokenUSDC,
+//   TokenUSDD,
+//   TokenUSDT,
+// } from "@web3icons/react";
 import Telegram from "@mui/icons-material/Telegram";
 import { BOT_LINK } from "../../utils/links";
+import { useTheme } from "@mui/material";
 
 export const Hero = () => {
+  const theme = useTheme();
   return (
     <Wrapper id="hero">
       <TextWrapper>
-        <SuperText>The most efficient</SuperText>
-        <Maintext variant="h2">Trading bot on TRON</Maintext>
+        <SuperText>Designed to simplify </SuperText>
+        <Maintext variant="h4">
+          The creation and deployment <br /> of new tokens on the
+          <span style={{ color: `${[theme.palette.primary.main]}` }}>
+            {" "}
+            Ethereum network
+          </span>
+        </Maintext>
       </TextWrapper>
-      <Typography variant="body2" letterSpacing=".1rem" color="#767676">
-        Buy/Sell/Snipe/Scan any TRC token directly from Telegram!
-      </Typography>
 
       <Stack
         sx={{
@@ -60,7 +65,7 @@ export const Hero = () => {
             textTransform: "capitalize",
           }}
         >
-          Tutorial
+          Learn More
         </MuiBtn>
       </Stack>
 
@@ -102,18 +107,18 @@ export const Hero = () => {
           color="#767676"
           letterSpacing="4px"
         >
-          Sell tokens at lightening speed{" "}
+          Deploy new tokens at reduced gas fees
         </Typography>
-        <Network>
+        {/* <Network>
           <li>
             <TokenUSDT /> USDT
           </li>
           <li>
             <TokenUSDD /> USDD
           </li>
-          {/* <li>
+          <li>
             <NetworkTron />
-          </li> */}
+          </li> 
           <li>
             <TokenSUN />
             SUN
@@ -121,7 +126,7 @@ export const Hero = () => {
           <li>
             <TokenUSDC /> USDC
           </li>
-        </Network>
+        </Network> */}
       </Box>
     </Wrapper>
   );

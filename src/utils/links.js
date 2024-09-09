@@ -1,3 +1,3 @@
-export const BOT_LINK = "https://t.me/TRXMoonBot";
-export const INSTAGRAM = "https://t.me/TRXMoonBot";
+export const BOT_LINK = "https://";
+export const INSTAGRAM = "https://";
 // export const TELEGRAM = "https://t.me/TRXMoonBot";

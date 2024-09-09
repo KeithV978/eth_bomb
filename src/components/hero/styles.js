@@ -9,20 +9,23 @@ export const Wrapper = styled("section")(({ theme }) => ({
   },
 }));
 export const TextWrapper = styled("div")(({ theme }) => ({
-  width: "max-content",
+  width: "fit-content",
   margin: "0 auto",
-  background: `linear-gradient(180deg, #fff, #181818)`,
-  webkitBackgroundClip: "text",
-  webkitTextFillColor: "transparent",
-  backgroundClip: "text",
-  textFillColor: "transparent",
-  marginBottom: "1rem",
+  // background: `linear-gradient(180deg, #fff, #181818)`,
+  // webkitBackgroundClip: "text",
+  // webkitTextFillColor: "transparent",
+  // backgroundClip: "text",
+  // textFillColor: "transparent",
+  // marginBottom: "1rem",
 }));
 export const Maintext = styled(Typography)(({ theme }) => ({
   // letterSpacing: ".2rem",
   textWrap: "wrap",
+  width: "100%",
   [theme.breakpoints.up("sm")]: {
-    letterSpacing: ".5rem",
+    // width: "50%",
+    margin: "0 auto",
+    // letterSpacing: ".5rem",
   },
 }));
 export const SuperText = styled(Typography)(({ theme }) => ({
@@ -35,20 +38,20 @@ export const Img = styled("img")(({ theme }) => ({
     width: "360px",
   },
 }));
-export const Network = styled("div")(({ theme }) => ({
-  listStyle: "none",
-  display: "flex",
-  justifyContent: "space-evenly",
-  flexWrap: "wrap",
-  "& li": {
-    display: "flex",
-    flexDirection: "row",
-    alignItems: "center",
-    gap: 3,
-  },
-  paddingTop: "2rem",
+// export const Network = styled("div")(({ theme }) => ({
+//   listStyle: "none",
+//   display: "flex",
+//   justifyContent: "space-evenly",
+//   flexWrap: "wrap",
+//   "& li": {
+//     display: "flex",
+//     flexDirection: "row",
+//     alignItems: "center",
+//     gap: 3,
+//   },
+//   paddingTop: "2rem",
 
-  [theme.breakpoints.up("sm")]: {
-    paddingTop: "1rem",
-  },
-}));
+//   [theme.breakpoints.up("sm")]: {
+//     paddingTop: "1rem",
+//   },
+// }));

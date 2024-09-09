@@ -9,7 +9,7 @@ import { ConnectWallet } from "./components/connect";
 import ScrollToTop from "./components/scrollToTop";
 
 function App() {
-  document.title = "Welcome to MoonBot";
+  document.title = "EthBomb - Welcome";
   return (
     <Container>
       <main style={{ position: "relative" }}>

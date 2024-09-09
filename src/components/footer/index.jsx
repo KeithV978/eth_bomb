@@ -17,9 +17,9 @@ export const Footer = () => {
         color="#ccc"
         fontWeight={700}
         component="a"
-        href="https://moonbot.com"
+        // href="https://moonbot.com"
       >
-        Moonbot.com
+        EthBomb
       </Typography>
       <Stack direction="row" gap={2}>
         <IconButton sx={{ backgroundColor: "#00000070" }}>
@@ -34,7 +34,7 @@ export const Footer = () => {
       </Stack>
       <Box sx={{ borderTop: { sm: "none", xs: "1px solid #1c1c1c" } }}>
         <Typography variant="body1" color="#ccc" padding="1rem 0">
-          Powered By <NetworkTron /> TRON Network
+          Powered By <NetworkTron /> Ethereum
         </Typography>
       </Box>
       {/* <a href="https://www.freepik.com/free-vector/gradient-abstract-background_7448652.htm#from_view=detail_alsolike">
