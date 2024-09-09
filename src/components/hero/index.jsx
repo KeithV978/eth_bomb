@@ -23,7 +23,7 @@ import tron_hand from "../../assets/images/hero/hero_.png";
 //   TokenUSDT,
 // } from "@web3icons/react";
 import Telegram from "@mui/icons-material/Telegram";
-import { BOT_LINK } from "../../utils/links";
+import { BOT_LINK, DASH } from "../../utils/links";
 import { useTheme } from "@mui/material";
 import logo from "../../assets/images/logo/logo.png";
 
@@ -73,7 +73,7 @@ export const Hero = () => {
         <MuiBtn
           variant="outlined"
           color="primary"
-          href="https://app.eth-bomb.com"
+          href={DASH}
           sx={{
             borderRadius: "20px",
             paddingLeft: "2rem",

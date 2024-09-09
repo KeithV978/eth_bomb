@@ -10,6 +10,8 @@ import ListItemText from "@mui/material/ListItemText";
 import BookRounded from "@mui/icons-material/MenuBookOutlined";
 import StartRounded from "@mui/icons-material/StartRounded";
 import Typography from "@mui/material/Typography";
+import Link from "@mui/material/Link";
+import { DASH } from "../../utils/links";
 
 export const MobileNav = ({ menuOpen, toggleDrawer }) => {
   return (
@@ -21,19 +23,22 @@ export const MobileNav = ({ menuOpen, toggleDrawer }) => {
         onKeyDown={() => toggleDrawer(!menuOpen)}
       >
         <Typography variant="h5" padding="1rem">
-          EthBomb
+          <Link to="/">EthBomb</Link>
         </Typography>
         <Divider />
         <List>
           {[
-            { text: "Documentation", icon: <BookRounded /> },
-            { text: "Get Started", icon: <StartRounded /> },
+            { text: "Dashboard", icon: <BookRounded />, link: DASH },
+            { text: "Documentation", icon: <BookRounded />, link: "/" },
+            { text: "Get Started", icon: <StartRounded />, link: "/" },
           ].map((item, index) => (
             <ListItem key={index} disablePadding>
-              <ListItemButton>
-                <ListItemIcon>{item.icon}</ListItemIcon>
-                <ListItemText primary={item.text} />
-              </ListItemButton>
+              <Link to={item.link}>
+                <ListItemButton>
+                  <ListItemIcon>{item.icon}</ListItemIcon>
+                  <ListItemText primary={item.text} />
+                </ListItemButton>
+              </Link>
             </ListItem>
           ))}
         </List>
