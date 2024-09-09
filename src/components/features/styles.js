@@ -8,10 +8,12 @@ export const Wrapper = styled("section")(({ theme }) => ({
 export const Contents = styled(Stack)(({ theme }) => ({
   flexDirection: "column",
   justifyContent: "space-between",
-  padding: "2rem 0",
+  alignItems: "center",
+  padding: "1rem",
   gap: "1rem",
   [theme.breakpoints.up("sm")]: {
     flexDirection: "row",
+    padding: "2rem 0",
   },
 }));
 export const FeaturesCard = styled("div")(({ theme }) => ({

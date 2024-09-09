@@ -12,10 +12,16 @@ export const Wrapper = styled("section")(({ theme }) => ({
 export const Item = styled("div")(({ theme }) => ({
   //   display: "flex",
   alignItems: "center",
-  width: "max-content",
-  paddingLeft: "5rem",
+  width: "fit-content",
+  paddingLeft: "2rem",
   margin: "1rem",
+  [theme.breakpoints.up("sm")]: {
+    paddingLeft: "5rem",
+  },
   //   borderBottom: "1px solid #ccc",
 }));
 export const ItemHeader = styled(Typography)(({ theme }) => ({}));
-export const ItemBody = styled(Typography)(({ theme }) => ({}));
+export const ItemBody = styled(Typography)(({ theme }) => ({
+  //   lineBreak: "anywhere",
+  wordWrap: "break-word",
+}));
