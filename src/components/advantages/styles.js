@@ -25,7 +25,7 @@ export const Holder = styled("div")(({ theme }) => ({
   margin: "2rem 1rem",
   [theme.breakpoints.up("sm")]: {
     flexDirection: "row",
-    minHeight: "300px",
+    minHeight: "350px",
   },
 }));
 export const HolderTexts = styled("div")(({ theme }) => ({
