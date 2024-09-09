@@ -2,7 +2,7 @@ import { styled } from "@mui/material";
 import Typography from "@mui/material/Typography";
 
 export const Wrapper = styled("section")(({ theme }) => ({
-  minHeight: "70vh",
+  minHeight: "200px",
   padding: "3rem 2rem 2rem",
   display: "flex",
   flexDirection: "column",

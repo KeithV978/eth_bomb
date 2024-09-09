@@ -3,7 +3,7 @@ import Stack from "@mui/material/Stack";
 import Button from "@mui/material/Button";
 
 export const Wrapper = styled("section")(({ theme }) => ({
-  minHeight: "70vh",
+  minHeight: "550px",
 }));
 export const Contents = styled(Stack)(({ theme }) => ({
   flexDirection: "column",
@@ -26,7 +26,7 @@ export const FeaturesCard = styled("div")(({ theme }) => ({
   display: "flex",
   flexDirection: "column",
   justifyContent: "space-between",
-  boxShadow: "inset 0 0 0 1000px rgba(0,0,0,.4)",
+  boxShadow: "inset 0 0 0 1000px rgba(0,0,0,.3)",
   "&:hover": {
     boxShadow: "inset 0 0 0 1000px rgba(0,0,0,.168)",
   },

@@ -32,7 +32,18 @@ export const Hero = () => {
   return (
     <Wrapper id="hero">
       <Box sx={{ width: "30%", margin: "1rem auto" }}>
-        <img src={logo} alt="logo" style={{ width: "100%" }} />
+        <img
+          src={logo}
+          alt="logo"
+          style={{ marginLeft: "1rem", width: "100%" }}
+        />
+        <Typography
+          variant="h6"
+          textAlign="center"
+          sx={{ color: "primary.main", fontWeight: 600 }}
+        >
+          ETH BOMB
+        </Typography>
       </Box>
       <TextWrapper>
         <SuperText>Designed to simplify</SuperText>

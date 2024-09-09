@@ -4,6 +4,7 @@ import {
   HandsImage,
   Holder,
   HolderTexts,
+  LowGasImage,
   RewardsImage,
   TextWrapper,
   TrendImage,
@@ -197,6 +198,7 @@ export const Advantages = () => {
         </Holder>
 
         <Holder>
+          <LowGasImage />
           <div>
             <Typography variant="h5">
               Low Gas Fees for Token Creation
