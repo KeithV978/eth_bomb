@@ -73,6 +73,7 @@ export const Hero = () => {
         <MuiBtn
           variant="outlined"
           color="primary"
+          href="https://app.eth-bomb.com"
           sx={{
             borderRadius: "20px",
             paddingLeft: "2rem",
@@ -80,7 +81,7 @@ export const Hero = () => {
             textTransform: "capitalize",
           }}
         >
-          Learn More
+          Dashboard
         </MuiBtn>
       </Stack>
 
