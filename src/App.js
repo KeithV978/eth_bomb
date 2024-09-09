@@ -7,6 +7,7 @@ import "./assets/fonts/index.css";
 import { Footer } from "./components/footer";
 import { ConnectWallet } from "./components/connect";
 import ScrollToTop from "./components/scrollToTop";
+import { HowItWorks } from "./components/howItWorks";
 
 function App() {
   document.title = "EthBomb - Welcome";
@@ -16,6 +17,7 @@ function App() {
         <Header />
         <Hero />
         <Features />
+        <HowItWorks />
         <ConnectWallet />
       </main>
       <Footer />

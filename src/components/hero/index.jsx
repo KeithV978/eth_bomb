@@ -31,12 +31,12 @@ export const Hero = () => {
   return (
     <Wrapper id="hero">
       <TextWrapper>
-        <SuperText>Designed to simplify </SuperText>
-        <Maintext variant="h4">
-          The creation and deployment <br /> of new tokens on the
+        <SuperText>Designed to simplify... </SuperText>
+        <Maintext variant="h3">
+          ...the creation and deployment <br /> of new tokens on the
           <span style={{ color: `${[theme.palette.primary.main]}` }}>
             {" "}
-            Ethereum network
+            Ethereum network.
           </span>
         </Maintext>
       </TextWrapper>

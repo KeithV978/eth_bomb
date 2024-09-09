@@ -16,7 +16,7 @@ let theme = createTheme({
   typography: {
     fontFamily: "Roboto, SUSE, LilitaOne, Open-Sans",
 
-    h2: {
+    h3: {
       fontFamily: '"LilitaOne", "Open-Sans"',
       fontWeight: 700,
     },
